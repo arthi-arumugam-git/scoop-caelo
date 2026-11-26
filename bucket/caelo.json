@@ -1,0 +1,33 @@
+{
+    "version": "0.1.1",
+    "description": "Caelo: free, local security scanner for apps built with AI coding tools. Finds exposed keys, browser-leaked secrets, open Firebase or Supabase rules, and committed .env files. CLI plus MCP server.",
+    "homepage": "https://caelo.sh",
+    "license": "MIT",
+    "notes": [
+        "Caelo is installed globally with npm (it is an npm-based CLI, not a standalone binary).",
+        "Scan a folder:        caelo .",
+        "Run as an MCP server:  caelo --mcp",
+        "Caelo runs entirely on your machine: it reads files, uploads nothing, and redacts secret values.",
+        "The 'caelo' command is provided by npm's global bin, which the nodejs dependency adds to PATH."
+    ],
+    "depends": "nodejs",
+    "installer": {
+        "script": [
+            "Write-Host \"Installing caelo@$version globally with npm...\"",
+            "npm install -g caelo@$($version)",
+            "if ($LASTEXITCODE -ne 0) { abort 'caelo: ''npm install -g caelo'' failed. Ensure Node.js is installed (scoop install nodejs) and on PATH.' }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "npm uninstall -g caelo"
+        ]
+    },
+    "checkver": {
+        "url": "https://registry.npmjs.org/caelo/latest",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "url": "https://registry.npmjs.org/caelo/latest"
+    }
+}
