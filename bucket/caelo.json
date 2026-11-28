@@ -1,6 +1,6 @@
 {
     "version": "0.1.3",
-    "description": "Caelo: free, local security scanner for apps built with AI coding tools. Finds exposed keys, browser-leaked secrets, open Firebase or Supabase rules, and committed .env files. CLI plus MCP server.",
+    "description": "Caelo: free, local developer security scanner. Finds exposed keys, browser-leaked secrets, open Firebase or Supabase rules, and committed .env files. CLI plus MCP server.",
     "homepage": "https://caelo.sh",
     "license": "MIT",
     "notes": [
