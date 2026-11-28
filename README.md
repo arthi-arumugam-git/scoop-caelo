@@ -1,6 +1,6 @@
 # Caelo on Scoop (Windows)
 
-Caelo is Irth Labs' free local developer security tool. It checks project files for exposed keys, permissive access rules and configuration issues. Irth Labs separately reviews AI-built products and cleans up business data for AI. Caelo does not clean or change business data.
+Caelo is Irth Labs' free local developer security tool. It checks project files for exposed keys, permissive access rules and configuration issues. Irth Labs separately finds and fixes security flaws in AI-built products and cleans up business data for AI. Caelo does not clean or change business data.
 
 [Caelo](https://caelo.sh) is a free, local developer security scanner. It finds exposed keys, browser-leaked secrets,
 open Firebase or Supabase rules, and committed `.env` files. It runs entirely on your
